@@ -1,23 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './assets/images/logo.png';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="app__header">
+        <img src={logo} className="app__logo" />
+        <div className="app__separator">&nbsp;</div>
+        <div className="app__headline app__headline--top">
+          &bull; droga do sukcesu &bull;
+        </div>
+        <div className="app__separator"></div>
+        <div className="app__headline app__headline--bottom">
+          jest zawsze w budowie
+        </div>
+        <div className="app__separator"></div>
+        <div className="app__footer">
+          <div>
+            <strong>KK Consulting - Katarzyna Korniaho</strong>
+          </div>
+          <div>
+            NIP <strong>9581433595</strong>, REGON <strong>383914944</strong>
+          </div>
+          <div>
+            tel.&nbsp;<a href="tel:0048604792760">+48 604 792 760</a>
+            &nbsp;e-mail:&nbsp;
+            <a href="mailto:kontakt@kasiakorniaho.pl">
+              kontakt@kasiakorniaho.pl
+            </a>
+          </div>
+        </div>
       </header>
     </div>
   );

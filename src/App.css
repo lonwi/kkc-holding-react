@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+strong {
+  font-weight: 700;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.4;
+}
+a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.app {
+  background-image: url('./assets/images/bg2.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+.app__header {
+  background: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 30px;
+  text-align: center;
+}
+.app__logo {
+  margin-bottom: 45px;
+  width: 360px;
+}
+.app__separator {
+  background-color: #fff;
+  height: 2px;
+  border-radius: 3px;
+  margin: 15px 0;
+  width: 240px;
+  max-width: 70%;
+}
+.app__headline {
+  text-transform: uppercase;
+}
+.app__headline--top {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 5px 0;
+}
+.app__headline--bottom {
+  padding: 15px 0;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  /* margin: 15px 0; */
+}
+.app__footer {
+  font-size: 16px;
+  font-weight: 300;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+@media (min-width: 576px) {
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 768px) {
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 992px) {
+  .app__separator {
+    background-color: #fff;
+    height: 2px;
+    border-radius: 2px;
+    margin: 15px 0;
+    width: 480px;
+    max-width: 70%;
   }
-  to {
-    transform: rotate(360deg);
+  .app__logo {
+    margin-bottom: 10vh;
+    max-width: 480px;
   }
+  .app__headline--top {
+    font-size: 24px;
+    letter-spacing: 5px;
+  }
+  .app__headline--bottom {
+    padding: 30px 0;
+    font-size: 36px;
+    letter-spacing: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
 }
