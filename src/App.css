@@ -14,6 +14,7 @@ strong {
   font-weight: 700;
 }
 body {
+  background: #000;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -79,6 +80,9 @@ a {
   font-size: 16px;
   font-weight: 300;
 }
+.app__footer span {
+  display: block;
+}
 img {
   height: auto;
   max-width: 100%;
@@ -87,6 +91,9 @@ img {
 }
 
 @media (min-width: 768px) {
+  .app__footer span {
+    display: inline;
+  }
 }
 
 @media (min-width: 992px) {

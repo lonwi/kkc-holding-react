@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="app">
+    <div className="app animated fadeIn">
       <header className="app__header">
         <img src={logo} className="app__logo" />
         <div className="app__separator">&nbsp;</div>
@@ -18,18 +18,26 @@ function App() {
         <div className="app__separator"></div>
         <div className="app__footer">
           <div>
-            <strong>KK Consulting - Katarzyna Korniaho</strong>
+            <strong>KK Consulting</strong>
+          </div>
+          <div>
+            <strong>Katarzyna Korniaho</strong>
           </div>
           <div>
             NIP <strong>9581433595</strong>, REGON <strong>383914944</strong>
           </div>
           <div>
-            tel.&nbsp;<a href="tel:0048604792760">+48 604 792 760</a>
-            &nbsp;e-mail:&nbsp;
-            <a href="mailto:kontakt@kasiakorniaho.pl">
-              kontakt@kasiakorniaho.pl
-            </a>
+            <span>
+              tel: <a href="tel:0048604792760">&nbsp;+48 604 792 760&nbsp;</a>
+            </span>
+            <span>
+              e-mail:
+              <a href="mailto:kontakt@kasiakorniaho.pl">
+                &nbsp;kontakt@kasiakorniaho.pl&nbsp;
+              </a>
+            </span>
           </div>
+          <div></div>
         </div>
       </header>
     </div>
