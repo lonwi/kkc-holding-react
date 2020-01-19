@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="app animated fadeIn">
       <header className="app__header">
-        <img src={logo} className="app__logo" />
+        <img src={logo} className="app__logo" alt="KK Consulting - logo" />
         <div className="app__separator">&nbsp;</div>
         <div className="app__headline app__headline--top">
           &bull; droga do sukcesu &bull;
